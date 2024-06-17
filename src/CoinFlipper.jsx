@@ -6,11 +6,12 @@ const CoinFlipper = ({ headsImageUrl, tailsImageUrl }) => {
   const [clicked, setClicked] = useState(false);
 
   const handleFlip = () => {
-    setClicked(true);
+    
     setIsFlipping(true);
     setTimeout(() => {
       setIsHeads(Math.round(Math.random()));
       setIsFlipping(false);
+      setClicked(true);
     }, 3000); 
   };
 

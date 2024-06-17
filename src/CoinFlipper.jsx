@@ -18,7 +18,7 @@ const CoinFlipper = ({ headsImageUrl, tailsImageUrl }) => {
   return (
     <div className="flex flex-col items-center gap-5">
     
-      <div className={`relative w-60 h-60 ${isFlipping ? 'animate-multiflip' : ''}`}>
+      <div className={`relative  ${isFlipping ? 'animate-multiflip' : ''} lg:w-60 lg:h-60 w-80 h-80`}>
         <div className={`absolute w-full h-full ${isHeads ? '' : 'hidden'}`}>
           <img src={headsImageUrl} alt="Heads" className="w-full h-full object-cover" />
         </div>

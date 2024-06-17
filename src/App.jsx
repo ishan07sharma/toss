@@ -17,7 +17,7 @@ function App() {
 
     
     <div className="flex flex-col justify-center items-center h-screen">
-      <h1 className="text-2xl mb-4"></h1>
+      
       <CoinFlipper headsImageUrl={imageUrl1} tailsImageUrl={imageUrl2} />
     </div>
   
